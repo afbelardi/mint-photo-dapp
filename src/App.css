@@ -19,7 +19,19 @@
   100%{background-position:0% 10%}
 }
 
-.social-links {
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
+
+.social-wrapper {
+  display: flex;
+  padding: 40px;
+  text-decoration: none;
+}
+
+
+
+.social-div {
   background-color: white;
   height: 50px;
   width: 50px;
@@ -27,10 +39,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social-link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 .social-icon {
   width: 30px; 
   height: 30px;
+  
 }
 
