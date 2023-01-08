@@ -19,8 +19,16 @@
   100%{background-position:0% 10%}
 }
 
+
 a, a:visited, a:hover, a:active {
   color: inherit;
+}
+
+.navbar-wrapper {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .social-wrapper {
@@ -28,6 +36,8 @@ a, a:visited, a:hover, a:active {
   padding: 40px;
   text-decoration: none;
 }
+
+
 
 
 
@@ -44,13 +54,6 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-.social-link {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
 
 .social-icon {
   width: 30px; 
@@ -58,3 +61,6 @@ a:visited {
   
 }
 
+svg:hover {
+  transform: scale(1.1);
+}
