@@ -5,6 +5,11 @@ import React from 'react';
 export default function NavBar (props) {
     return (
         <div className="navbar-wrapper">
+            <div className="hamburger">
+                <div className="burger-lines"></div>
+                <div className="burger-lines"></div>
+                <div className="burger-lines"></div>
+            </div>
             <div className='social-wrapper'>
                 <div className='social-div'>
                     <a>
