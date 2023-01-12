@@ -140,6 +140,11 @@ svg:hover {
 
 }
 
+@media screen and (min-width: 701px) {
+  .menu-bar-wrapper, .menu-bar, #close-out-wrapper, #close-out1, #close-out2 {
+    display: none;
+  }
+}
 
 
 /* IMAGE SLIDER */
