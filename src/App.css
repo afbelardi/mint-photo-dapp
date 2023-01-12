@@ -97,6 +97,7 @@ svg:hover {
   position: absolute;
   display: flex;
   justify-content: flex-end;
+  display: flex;
 }
 
 .menu-bar {
@@ -138,6 +139,20 @@ svg:hover {
   margin-top: 30px;
   transform: rotate(45deg)
 
+}
+
+#menu-social-links-wrapper {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#opensea {
+  height: 20%;
+  width: 80%;
 }
 
 @media screen and (min-width: 701px) {

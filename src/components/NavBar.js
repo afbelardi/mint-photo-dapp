@@ -10,7 +10,7 @@ export default function NavBar (props) {
     return (
         <div className="navbar-wrapper">
             <div className="hamburger">
-            <Hamburger toggled={props.menuOpen} toggle={props.setMenuOpen}  color="white" duration={.9} size={48}/>
+            <Hamburger toggled={props.menuOpen} toggle={props.setMenuOpen}  color="white" duration={.9} size={40}/>
             </div>
             <div className='social-wrapper'>
                 <div className='social-div'>
