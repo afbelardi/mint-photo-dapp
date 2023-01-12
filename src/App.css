@@ -90,6 +90,56 @@ svg:hover {
   transform: scale(1.1);
 }
 
+/* MENU BAR */ 
+.menu-bar-wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-bar {
+  background-color: white;
+  height: 100%;
+  width: 70%;
+  z-index: 10;
+  position: fixed;
+  animation: 10s ease-in 3s infinite reverse both running slidein;
+}
+
+
+
+#close-out-wrapper {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 300px;
+  z-index: 11;
+}
+
+#close-out1 {
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  z-index: 12;
+  margin-right: -29px;
+  margin-top: 30px;
+  transform: rotate(-45deg)
+}
+
+#close-out2 {
+  height: 3px;
+  width: 30px;
+  background-color: black;
+  z-index: 12;
+  margin-right: 30px;
+  margin-top: 30px;
+  transform: rotate(45deg)
+
+}
+
 
 
 /* IMAGE SLIDER */
@@ -101,3 +151,4 @@ svg:hover {
   margin-top: 50px;
   opacity: .4;
 }
+

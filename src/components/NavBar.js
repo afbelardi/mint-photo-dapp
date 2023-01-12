@@ -4,18 +4,13 @@ import Hamburger from 'hamburger-react';
 
 export default function NavBar (props) {
 
-    const [menuOpen, setMenuOpen] = useState(false)
+    
 
 
     return (
         <div className="navbar-wrapper">
-            {/* <div onClick={toggleHamburger} className="hamburger">
-                <span className="burger-lines" id="burgerline1"></span>
-                <span className="burger-lines" id="burgerline2"></span>
-                <span className="burger-lines" id="burgerline3"></span>
-            </div> */}
             <div className="hamburger">
-            <Hamburger toggled={menuOpen} toggle={setMenuOpen}  color="white" duration={.9} size={48}/>
+            <Hamburger toggled={props.menuOpen} toggle={props.setMenuOpen}  color="white" duration={.9} size={48}/>
             </div>
             <div className='social-wrapper'>
                 <div className='social-div'>
