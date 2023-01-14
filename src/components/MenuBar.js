@@ -11,8 +11,7 @@ export default function MenuBar (props) {
     <div className="menu-bar-wrapper">
         <div className="menu-bar">
             <div  id="close-out-wrapper">
-                <div onClick={toggleMenu} id="close-out1"></div>
-                <div onClick={toggleMenu} id="close-out2"></div>
+            <button onClick={toggleMenu} className="close-out">X</button>
         </div>
         <div>
             <section id="menu-social-links-wrapper">
@@ -35,11 +34,7 @@ export default function MenuBar (props) {
             <a href="https://www.twitter.com/afbelardi" target="_blank" className="menu-buttons">
                 Twitter
             </a>
-
-                
-                
             <button className="menu-buttons">Instagram</button>
-            
             </section> 
         </div>
         </div>
