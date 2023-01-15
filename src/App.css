@@ -79,7 +79,14 @@ a, a:visited, a:hover, a:active {
   margin-left: 10px;
   margin-right: 10px;
   text-decoration: none;
+  transition: box-shadow .25s,transform .25s;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
 }
+
+.social-div:hover {
+  box-shadow: rgba(45, 35, 66, .8) 0 4px 8px, rgba(45, 35, 66, .3) 0 3px 5px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
 
 
 .social-icon {
@@ -88,7 +95,7 @@ a, a:visited, a:hover, a:active {
   
 }
 
-svg:hover {
+.social-div:hover {
   transform: scale(1.1);
 }
 

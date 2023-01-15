@@ -16,13 +16,13 @@ export default function MenuBar (props) {
         <div>
             <section id="menu-social-links-wrapper">
             <button className="menu-buttons">Connect Wallet</button>
-            <button className="menu-buttons">
+            <a href="https://opensea.io/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">
                 OpenSea
-            </button>
-            <a href="https://www.twitter.com/afbelardi" target="_blank" className="menu-buttons">
+            </a>
+            <a href="https://www.twitter.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">
                 Twitter
             </a>
-            <button className="menu-buttons">Instagram</button>
+            <a href="https://www.instagram.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">Instagram</a>
             </section> 
         </div>
         </div>
