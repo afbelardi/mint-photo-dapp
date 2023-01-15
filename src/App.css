@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@700&family=Varela+Round&display=swap');
 
 .App {
-  background: linear-gradient(135deg, #000428, #004e92);
-  background-size: 500% 500%;
-  -webkit-animation: AnimationName 35s ease infinite;
-  animation: Gradient 28s ease infinite;
+  background: radial-gradient(80% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background-size: 300% 300%;
+  -webkit-animation: AnimationName 25s ease infinite;
+  animation: gradient 25s ease infinite;
   height: 100vh;
   width: 100vw;
   overflow-y: scroll;
 }
-@-webkit-keyframes Gradient {
+@-webkit-keyframes gradient {
   0%{background-position:0% 30%}
-  50%{background-position:100% 91%}
+  50%{background-position:100% 85%}
   100%{background-position:0% 10%}
 
 }
-@keyframes Gradient {
-  0%{background-position:0% 10%}
-  50%{background-position:100% 91%}
+@keyframes gradient {
+  0%{background-position:0% 30%}
+  50%{background-position:100% 85%}
   100%{background-position:0% 10%}
 }
 
@@ -153,7 +153,6 @@ svg:hover {
   align-items: center;
   appearance: none;
   background: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-  animation: Gradient 28s ease infinite;
   border: 0;
   border-radius: 6px;
   box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -198,6 +197,8 @@ svg:hover {
 .menu-buttons:visited {
   color: white;
 }
+
+
 @media screen and (min-width: 701px) {
   .menu-bar-wrapper, .menu-bar, #close-out-wrapper, #close-out1, #close-out2 {
     display: none;
@@ -208,7 +209,6 @@ svg:hover {
 /* IMAGE SLIDER */
 
 .image-wrapper {
-  background-color: white;
   height: 500px;
   width: 100%;
   margin-top: 50px;
