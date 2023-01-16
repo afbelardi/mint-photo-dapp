@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import ImageSlider from './components/ImageSlider';
 import MenuBar from './components/MenuBar';
 
+
 function App(props) {
 
   const [menuOpen, setMenuOpen] = useState(false)

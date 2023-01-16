@@ -84,7 +84,8 @@ a, a:visited, a:hover, a:active {
 }
 
 .social-div:hover {
-  box-shadow: rgba(45, 35, 66, .8) 0 4px 8px, rgba(45, 35, 66, .3) 0 3px 5px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: rgba(34, 31, 42, 0.8) 0 4px 8px, rgba(26, 23, 33, 0.3) 0 3px 5px -3px, #3a3c4b 0 -3px 0 inset;
+  cursor: pointer;
 }
 
 
@@ -115,7 +116,7 @@ a, a:visited, a:hover, a:active {
   width: 70%;
   z-index: 10;
   position: fixed;
-  animation: 10s ease-in 3s infinite reverse both running slidein;
+  animation: ;
   border-radius: 10px;
 }
 
@@ -216,10 +217,23 @@ a, a:visited, a:hover, a:active {
 /* IMAGE SLIDER */
 
 .image-wrapper {
-  height: 500px;
+  height: 85%;
   width: 100%;
   margin-top: 50px;
-  opacity: .4;
-  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
 }
+
+#image-column-1 {
+  height: 90%;
+  width: 45%;
+  background-color: white;
+}
+
+#image-column-2 {
+  height: 90%;
+  width: 45%;
+  background-color: white;
+}
+
 
