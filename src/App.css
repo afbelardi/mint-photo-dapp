@@ -228,12 +228,14 @@ a, a:visited, a:hover, a:active {
   height: 90%;
   width: 45%;
   background-color: white;
+  opacity: .2;
 }
 
 #image-column-2 {
   height: 90%;
   width: 45%;
   background-color: white;
+  opacity: .2;
 }
 
 

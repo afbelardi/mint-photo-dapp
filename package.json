@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
     "animate.css-react": "^1.1.0",
+    "axios": "^1.2.2",
     "dotenv": "^16.0.3",
     "framer-motion": "^7.10.2",
     "hamburger-react": "^2.5.0",
