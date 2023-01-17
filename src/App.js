@@ -12,7 +12,6 @@ function App(props) {
     <div className="App">
       {menuOpen ? <MenuBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> : ''}
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-
       <ImageSlider />
     </div>
   );
