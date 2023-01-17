@@ -9,6 +9,9 @@ const photoColumn1 = [
     },
     {
         link: 'https://i.ibb.co/h7nGmj2/DSC00730.jpg'
+    },
+    {
+        link: "https://i.ibb.co/FB42gbk/DSC00466.jpg" 
     }
 ]
 
