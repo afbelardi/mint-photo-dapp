@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Hamburger from 'hamburger-react';
 import { Transition } from 'react-transition-group';
 import logoGif from '../assets/logo.gif';
+import { Fade } from 'react-reveal';
 
 
 
@@ -12,7 +13,10 @@ export default function NavBar (props) {
 
     return (
         <div className="navbar-wrapper">
-            <img src={logoGif}></img>
+            <Fade left>
+            <img src={logoGif} style={{width: "350px", height: "150px", marginTop: "-10px"}}></img>
+            </Fade>
+            <Fade right>
             <div className="hamburger">
             <Hamburger toggled={props.menuOpen} toggle={props.setMenuOpen}  color="white" duration={.9} size={40}/>
             </div>
@@ -40,6 +44,7 @@ export default function NavBar (props) {
                 </a>
             </div>
             </div>
+            </Fade>
          </div>   
     )
 }
