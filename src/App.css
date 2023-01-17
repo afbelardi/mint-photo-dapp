@@ -227,15 +227,20 @@ a, a:visited, a:hover, a:active {
 #image-column-1 {
   height: 90%;
   width: 45%;
-  background-color: white;
-  opacity: .2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #image-column-2 {
   height: 90%;
   width: 45%;
-  background-color: white;
-  opacity: .2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.images {
+  max-width: 80%;
+}
 
