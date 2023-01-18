@@ -10,10 +10,23 @@ export default function ImageSlider (props) {
         <div id="animation-wrapper">
         <div id="image-wrapper">
             <span id="image-column-1">
-
+            {Object.keys(photoColumn1).length 
+            ? photoColumn1.map(link => {
+                return(
+                    <img className="image" src={link.link}></img>
+                )
+            })
+        : ''}
             </span>
             <span id="image-column-2">
-                
+            {Object.keys(photoColumn2).length 
+            ? photoColumn2.map(link => {
+                return(
+                    <img className="image" src={link.link}></img>
+                )
+            })
+        : ''}
+
             </span>
         </div>
         </div>
