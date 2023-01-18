@@ -273,7 +273,7 @@ a, a:visited, a:hover, a:active {
     transform: translateY(0%);
   }
   100% {
-    transform: translateY(-250%);
+    transform: translateY(-225%);
   }
 } 
 
