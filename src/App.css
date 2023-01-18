@@ -234,46 +234,48 @@ a, a:visited, a:hover, a:active {
   height: 90%;
   display: flex;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 #image-column-1 {
   height: 100%;
   width: 45%;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  animation: floatUpAndDown 25s ease-in-out infinite alternate;
+  
 }
 
 #image-column-2 {
   height: 100%;
   width: 45%;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  animation: floatUpAndDown 25s ease-in-out infinite alternate;
 }
 
 .image {
-  max-height: 90%;
+  height: 90%;
   max-width: 80%;
-  margin-bottom: 50px;
   margin-top: 20px;
+  margin-bottom: 50px;
+  box-shadow: rgba(45, 35, 66, .8) 0 16px 24px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  border-radius: 6px;
 }
 
 
 
 
-/* @keyframes floatUpAndDown {
+@keyframes floatUpAndDown {
   0% {
-    transform: translateY(50%);
+    transform: translateY(0%);
   }
   100% {
-    transform: translateY(-200%);
+    transform: translateY(-250%);
   }
-} */
+} 
 
 
 
