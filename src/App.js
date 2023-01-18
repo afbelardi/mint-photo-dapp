@@ -12,7 +12,9 @@ function App(props) {
     <div className="App">
       {menuOpen ? <MenuBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> : ''}
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <div id="image-slider-wrapper">
       <ImageSlider />
+      </div>
     </div>
   );
 }

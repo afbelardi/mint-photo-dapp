@@ -216,16 +216,37 @@ a, a:visited, a:hover, a:active {
 
 /* IMAGE SLIDER */
 
-#animation-wrapper {
+#image-slider-wrapper {
   width: 100vw;
   height: 85vh;
   display: flex;
   justify-content: center;
 }
 
+#animation-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #image-wrapper {
   width: 90vw;
   height: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#image-column-1 {
+  height: 100%;
+  width: 45%;
+  background-color: white;
+}
+
+#image-column-2 {
+  height: 100%;
+  width: 45%;
+  background-color: white;
+
 }
 
 

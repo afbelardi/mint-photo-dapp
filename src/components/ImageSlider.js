@@ -9,6 +9,12 @@ export default function ImageSlider (props) {
     return(
         <div id="animation-wrapper">
         <div id="image-wrapper">
+            <span id="image-column-1">
+
+            </span>
+            <span id="image-column-2">
+                
+            </span>
         </div>
         </div>
     )
