@@ -231,7 +231,7 @@ a, a:visited, a:hover, a:active {
 
 #image-wrapper {
   width: 90vw;
-  height: 90%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   overflow: hidden;
@@ -243,7 +243,7 @@ a, a:visited, a:hover, a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: floatUpAndDown 25s ease-in-out infinite alternate;
+  animation: floatUpAndDown 20s ease-in-out infinite alternate;
   
 }
 
@@ -253,7 +253,7 @@ a, a:visited, a:hover, a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: floatUpAndDown 25s ease-in-out infinite alternate;
+  animation: floatUpAndDown 20s ease-in-out infinite alternate;
 }
 
 .image {
