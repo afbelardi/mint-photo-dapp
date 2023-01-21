@@ -8,9 +8,16 @@ import { Fade } from 'react-reveal';
 
 export default function NavBar (props) {
 
-    
+    const isConnected = Boolean(props.accounts[0]);
 
-
+    const connectAccount = async () => {
+        if (window.ethereum) {
+            const accounts = await window.ethereum.request({
+                method: "eth_requestAccounts"
+            });
+            props.setAccounts(accounts)
+        }
+    }
     return (
         <div className="navbar-wrapper">
             <Fade left>

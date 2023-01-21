@@ -7,6 +7,16 @@ export default function MenuBar (props) {
     const toggleMenu = () => {
         props.setMenuOpen(false)
     }
+    const isConnected = Boolean(props.accounts[0]);
+
+    const connectAccount = async () => {
+        if (window.ethereum) {
+            const accounts = await window.ethereum.request({
+                method: "eth_requestAccounts"
+            });
+            props.setAccounts(accounts)
+        }
+    }
 
     return (
     <div className="menu-bar-wrapper">
@@ -16,7 +26,11 @@ export default function MenuBar (props) {
         </div>
         <div>
             <section id="menu-social-links-wrapper">
-            <button className="menu-buttons">Connect Wallet</button>
+            {isConnected ? 
+            <button className="menu-buttons">Wallet Connected</button>
+        : 
+        <button className="menu-buttons" onClick={connectAccount}>Connect Wallet</button>}
+            
             <a href="https://opensea.io/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">
                 OpenSea
             </a>

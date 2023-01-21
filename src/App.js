@@ -7,11 +7,22 @@ import MenuBar from './components/MenuBar';
 
 function App(props) {
 
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [accounts, setAccounts] = useState([]);
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="App">
-      {menuOpen ? <MenuBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> : ''}
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      {menuOpen ? <MenuBar 
+      menuOpen={menuOpen} 
+      setMenuOpen={setMenuOpen}
+      accounts={accounts}
+      setAccounts={setAccounts} 
+      /> : ''}
+      <NavBar 
+      menuOpen={menuOpen} 
+      setMenuOpen={setMenuOpen}
+      accounts={accounts}
+      setAccounts={setAccounts}
+      />
       <div id="image-slider-wrapper">
       <ImageSlider />
       </div>
