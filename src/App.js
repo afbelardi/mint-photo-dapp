@@ -9,6 +9,7 @@ function App(props) {
 
   const [accounts, setAccounts] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [mintAmount, setMintAmount] = useState(1);
   return (
     <div className="App">
       {menuOpen ? <MenuBar 

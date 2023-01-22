@@ -18,14 +18,22 @@ export default function MenuBar (props) {
         }
     }
 
+    const handleIncrement = () => {
+        if (props.mintAmount >= 2) return;
+        props.setMintAmount(props.mintAmount + 1);
+    }
+
+    const handleDecrement = () => {
+        if (props.mintAmount <= 1) return;
+        props.setMintAmount(props.mintAmount - 1);
+    }
     return (
     <div className="menu-bar-wrapper">
         <div className="menu-bar">
             <div  id="close-out-wrapper">
             <button onClick={toggleMenu} className="close-out">X</button>
         </div>
-        <div>
-            <section id="menu-social-links-wrapper">
+        <section id="menu-social-links-wrapper">
             {isConnected ? 
             <button className="menu-buttons">Wallet Connected</button>
         : 
@@ -38,8 +46,11 @@ export default function MenuBar (props) {
                 Twitter
             </a>
             <a href="https://www.instagram.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">Instagram</a>
-            </section> 
-        </div>
+        </section> 
+        <section id="mint-section">
+            <button className="menu-buttons">Mint</button>
+        </section>
+        
         </div>
         </div>
     )
