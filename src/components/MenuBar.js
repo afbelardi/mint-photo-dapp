@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Box, Button, Input, Text } from '@chakra-ui/react';
 
 
 export default function MenuBar (props) {
@@ -47,10 +47,10 @@ export default function MenuBar (props) {
             </a>
             <a href="https://www.instagram.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">Instagram</a>
         </section> 
-        <section id="mint-section">
+        {isConnected ? <section id="mint-section">
             <button className="menu-buttons">Mint</button>
         </section>
-        
+        : '' }
         </div>
         </div>
     )
