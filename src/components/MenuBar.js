@@ -48,7 +48,19 @@ export default function MenuBar (props) {
             <a href="https://www.instagram.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">Instagram</a>
         </section> 
         {isConnected ? <section id="mint-section">
+        <Button 
+                        className='menu-buttons'
+                        marginRight='4px'
+                        onClick={handleDecrement}>
+                            -
+                        </Button>
             <button className="menu-buttons">Mint</button>
+            <Button 
+                        className='menu-buttons'
+                        marginLeft="3px"
+                        onClick={handleDecrement}>
+                            +
+                        </Button>
         </section>
         : '' }
         </div>
