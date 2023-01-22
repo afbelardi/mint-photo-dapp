@@ -47,21 +47,35 @@ export default function MenuBar (props) {
             </a>
             <a href="https://www.instagram.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">Instagram</a>
         </section> 
-        {isConnected ? <section id="mint-section">
+        {isConnected ? 
+        <div id='mint-section-wrapper'> 
+        <section id="mint-section">
         <Button 
                         className='menu-buttons'
                         marginRight='4px'
                         onClick={handleDecrement}>
                             -
                         </Button>
-            <button className="menu-buttons">Mint</button>
+                        <Input
+                        className='mint-amount'
+                        readOnly
+                        width='100px'
+                        height='40px'
+                        textAlign='center'
+                        type='number'
+                        value={props.mintAmount}
+                        fontFamily="JetBrains Mono ,monospace"
+                        />
             <Button 
                         className='menu-buttons'
                         marginLeft="3px"
                         onClick={handleDecrement}>
                             +
                         </Button>
+                        
         </section>
+        <button style={{marginTop: '10px'}}className='menu-buttons'>Mint</button>
+        </div>
         : '' }
         </div>
         </div>

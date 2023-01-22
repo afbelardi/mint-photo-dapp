@@ -17,6 +17,8 @@ function App(props) {
       setMenuOpen={setMenuOpen}
       accounts={accounts}
       setAccounts={setAccounts} 
+      mintAmount={mintAmount}
+      setMintAmount={setMintAmount}
       /> : ''}
       <NavBar 
       menuOpen={menuOpen} 
