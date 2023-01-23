@@ -3,6 +3,7 @@ import { useState } from 'react';
 import NavBar from './components/NavBar';
 import ImageSlider from './components/ImageSlider';
 import MenuBar from './components/MenuBar';
+import Footer from './components/Footer';
 
 
 function App(props) {
@@ -10,6 +11,7 @@ function App(props) {
   const [accounts, setAccounts] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mintAmount, setMintAmount] = useState(1);
+
   return (
     <div className="App">
       {menuOpen ? <MenuBar 
@@ -29,6 +31,7 @@ function App(props) {
       <div id="image-slider-wrapper">
       <ImageSlider />
       </div>
+      <Footer mintAmount={mintAmount} setMintAmount={setMintAmount} />
     </div>
   );
 }

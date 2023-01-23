@@ -21,7 +21,7 @@ export default function NavBar (props) {
     return (
         <div className="navbar-wrapper">
             <Fade left>
-            <img src={logoGif} style={{width: "350px", height: "150px", marginTop: "-10px"}}></img>
+            <img src={logoGif} style={{width: "225px", height: "100px"}}></img>
             </Fade>
             <Fade right>
             <div className="hamburger">
