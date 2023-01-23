@@ -19,7 +19,7 @@ export default function MenuBar (props) {
     }
 
     const handleIncrement = () => {
-        if (props.mintAmount >= 2) return;
+        if (props.mintAmount >= 3) return;
         props.setMintAmount(props.mintAmount + 1);
     }
 
@@ -57,7 +57,7 @@ export default function MenuBar (props) {
                             -
                         </Button>
                         <Input
-                        className='mint-amount'
+                        id='mint-amount'
                         readOnly
                         width='100px'
                         height='40px'
@@ -69,12 +69,12 @@ export default function MenuBar (props) {
             <Button 
                         className='menu-buttons'
                         marginLeft="3px"
-                        onClick={handleDecrement}>
+                        onClick={handleIncrement}>
                             +
                         </Button>
                         
         </section>
-        <button style={{marginTop: '10px'}}className='menu-buttons'>Mint</button>
+        <button style={{marginTop: '10px'}} className='menu-buttons'>Mint</button>
         </div>
         : '' }
         </div>

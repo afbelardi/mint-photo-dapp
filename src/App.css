@@ -196,9 +196,12 @@ a, a:visited, a:hover, a:active {
   flex-direction: column;
 }
 
-#mint-section {
-display: flex;
-
+#mint-amount {
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 6px;
+  border: 2px solid #5468ff; 
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
 }
 
 
