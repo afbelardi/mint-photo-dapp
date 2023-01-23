@@ -31,7 +31,7 @@ function App(props) {
       <div id="image-slider-wrapper">
       <ImageSlider />
       </div>
-      <Footer mintAmount={mintAmount} setMintAmount={setMintAmount} />
+      <Footer mintAmount={mintAmount} setMintAmount={setMintAmount} accounts={accounts} setAccounts={setAccounts} />
     </div>
   );
 }

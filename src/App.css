@@ -310,5 +310,23 @@ a, a:visited, a:hover, a:active {
 
 /* FOOTER */
 
+#footer-wrapper {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+}
 
+#footer-content { 
+  width: 70vw;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
 
+#footer-mint {
+  display: flex;
+  flex-direction: column;
+  
+}
