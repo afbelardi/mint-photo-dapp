@@ -65,7 +65,7 @@ export default function Footer(props) {
                 {isConnected ? 
             <button className="menu-buttons">Wallet Connected</button>
         : 
-        <button className="menu-buttons" onClick={connectAccount}>Connect Wallet</button>}
+        <button className="menu-buttons" id='not-connected' onClick={connectAccount}>Connect Wallet</button>}
                 </section>
             </div>
         </div>

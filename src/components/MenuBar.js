@@ -71,8 +71,7 @@ export default function MenuBar (props) {
                         marginLeft="3px"
                         onClick={handleIncrement}>
                             +
-                        </Button>
-                        
+                        </Button> 
         </section>
         <button style={{marginTop: '10px'}} className='menu-buttons'>Mint</button>
         </div>
