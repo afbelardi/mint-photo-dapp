@@ -57,7 +57,7 @@ export default function Footer(props) {
                         </Button>
                         
         </section>
-        <button style={{marginTop: '10px'}} className='menu-buttons'>Mint</button>
+        <button style={{marginTop: '10px'}} className='menu-buttons' id='mint-footer-button'>Mint</button>
         </>
         : '' }
                 </section>
