@@ -46,7 +46,7 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .social-wrapper {
    display: none;
   }
@@ -72,7 +72,7 @@ a, a:visited, a:hover, a:active {
 
 
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 801px) {
   .hamburger {
     display: none;
   }
@@ -172,7 +172,7 @@ max-width: 70%;
 
 
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 801px) {
   #logo-gif {
     width: 300px;
   }
@@ -265,7 +265,7 @@ max-width: 70%;
   min-width: 400px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   #image-slider-wrapper {
     height: 85vh;
   }
@@ -327,6 +327,18 @@ max-width: 70%;
     transform: translateY(-250%);
   }
 } 
+
+
+@media screen and (max-width: 700px) {
+  @keyframes floatUpAndDown {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  } 
+}
 
 
 
