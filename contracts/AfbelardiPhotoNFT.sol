@@ -5,7 +5,7 @@ pragma solidity ^0.8.9;
 import "hardhat/console.sol";
 
 import '@openzeppelin/contracts/token/ERC721/ERC721.sol';
-import 'openzeppelin/contracts/access/Ownable.sol';
+import '@openzeppelin/contracts/access/Ownable.sol';
 
 contract AfbelardiPhotoNFT is ERC721, Ownable {
     uint256 public mintPrice;
@@ -14,7 +14,7 @@ contract AfbelardiPhotoNFT is ERC721, Ownable {
     uint public maxPerWallet;
     bool public isPublicMintEnabled;
     string internal baseTokenUri;
-    address payable public withdrawWallet;
+    address public withdrawWallet;
     mapping(address => uint256) public walletMints;
 
 
@@ -36,10 +36,10 @@ contract AfbelardiPhotoNFT is ERC721, Ownable {
 
     function tokenURI(uint256 tokenId_) public view override returns (string memory) {
         require(_exists(tokenId_), 'Token does not exist!');
-        return string(abi.encodePacked(baseTokenUri, Strings.toString(tokenId_, ".json"));
+        return string(abi.encodePacked(baseTokenUri, Strings.toString(tokenId_), ".json"));
     }
 
-    function withdraw() external onlyOwner {
+    function withdraw() public payable onlyOwner {
         (bool success, ) = withdrawWallet.call{ value: address(this).balance}('');
         require(success, 'withdraw failed');
     }
