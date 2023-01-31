@@ -43,8 +43,8 @@ contract AfbelardiPhotoNFT is ERC721, Ownable {
     }
 
     function withdraw() public payable onlyOwner {
-        (bool success, ) = withdrawWallet.call{ value: address(this).balance}('');
-        require(success, 'withdraw failed');
+        (bool success, ) = payable(msg.sender).call{ value: address(this).balance}('');
+        require(success, 'Withdrawal failed');
     }
 
     function mint(uint256 quantity_) public payable {
