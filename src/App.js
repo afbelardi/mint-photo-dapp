@@ -9,7 +9,7 @@ import { ethers, BigNumber } from 'ethers';
 
 function App(props) {
 
-  const afbelardiContractAddress = '0xa8825A500863bbaAc13f5D15810BAf3Ea2463984';
+  const afbelardiContractAddress = '0xB88CC252C7aEb2E877fcA2CbAB6C1cde6d5d1feA';
 
   const [accounts, setAccounts] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
