@@ -14,8 +14,10 @@ contract AfbelardiPhotoNFT is ERC721, Ownable {
     uint public maxPerWallet;
     bool public isPublicMintEnabled;
     string internal baseTokenUri;
+    string public baseExtension;
     address public withdrawWallet;
     mapping(address => uint256) public walletMints;
+    mapping(address => bool) public isWhiteListed;
 
 
     constructor() payable ERC721('AfbelardiPhotoNFT', 'AFB') {
@@ -30,8 +32,9 @@ contract AfbelardiPhotoNFT is ERC721, Ownable {
         isPublicMintEnabled = isPublicMintEnabled_;
     }
 
-    function setBaseTokenUri(string calldata baseTokenUri_) external onlyOwner {
+    function setBaseTokenUri(string calldata baseTokenUri_, string calldata baseExtension_) external onlyOwner {
         baseTokenUri = baseTokenUri_;
+        baseExtension = baseExtension_;
     }
 
     function tokenURI(uint256 tokenId_) public view override returns (string memory) {

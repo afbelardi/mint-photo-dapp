@@ -4,13 +4,36 @@ import NavBar from './components/NavBar';
 import ImageSlider from './components/ImageSlider';
 import MenuBar from './components/MenuBar';
 import Footer from './components/Footer';
-
+import AfbelardiPhotoNFT from './AfbelardiPhotoNFT.json';
+import { ethers, BigNumber } from 'ethers';
 
 function App(props) {
+
+  const afbelardiContractAddress = '0xa8825A500863bbaAc13f5D15810BAf3Ea2463984';
 
   const [accounts, setAccounts] = useState([]);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mintAmount, setMintAmount] = useState(1);
+
+  const commenceMint = async () => {
+    if (window.ethereum) {
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      const signer = provider.getSigner();
+      const contract = new ethers.Contract(
+        afbelardiContractAddress,
+        AfbelardiPhotoNFT.abi,
+        signer
+      );
+      try {
+        const response = await contract.mint(BigNumber.from(mintAmount), {
+          value: ethers.utils.parseEther((0.02 * mintAmount).toString())
+        });
+        console.log('response: ', response);
+      } catch(error){
+        console.error(error)
+      }
+    } 
+  }
 
   return (
     <div className="App">
@@ -21,6 +44,7 @@ function App(props) {
       setAccounts={setAccounts} 
       mintAmount={mintAmount}
       setMintAmount={setMintAmount}
+      commenceMint={commenceMint}
       /> : ''}
       <NavBar 
       menuOpen={menuOpen} 

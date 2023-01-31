@@ -50,12 +50,12 @@ export default function MenuBar (props) {
         {isConnected ? 
         <div id='mint-section-wrapper'> 
         <section id="mint-section">
-        <Button 
-                        className='menu-buttons'
-                        marginRight='4px'
-                        onClick={handleDecrement}>
-                            -
-                        </Button>
+            <Button 
+                className='menu-buttons'
+                marginRight='4px'
+                onClick={handleDecrement}>
+                     -
+            </Button>
                         <Input
                         id='mint-amount'
                         readOnly
@@ -71,9 +71,9 @@ export default function MenuBar (props) {
                         marginLeft="3px"
                         onClick={handleIncrement}>
                             +
-                        </Button> 
+            </Button> 
         </section>
-        <button style={{marginTop: '10px'}} className='menu-buttons'>Mint</button>
+        <button style={{marginTop: '10px'}} className='menu-buttons' onClick={props.commenceMint}>Mint</button>
         </div>
         : '' }
         </div>
