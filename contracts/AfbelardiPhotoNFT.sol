@@ -49,6 +49,7 @@ contract AfbelardiPhotoNFT is ERC721, Ownable {
 
     function mint(uint256 quantity_) public payable {
         require(isPublicMintEnabled, 'Minting not enabled');
+        require(quantity_ > 0, 'You must mint at least one NFT');
         require(msg.value == quantity_ * mintPrice, 'Wrong mint value');
         require(totalSupply + quantity_ <= maxSupply, 'Sold out');
         require(walletMints[msg.sender] + quantity_ <= maxPerWallet, 'Exceeded max wallet');
