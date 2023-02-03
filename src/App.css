@@ -259,7 +259,7 @@ max-width: 70%;
 
 #image-slider-wrapper {
   width: 100vw;
-  height: 70vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   min-width: 400px;
@@ -348,9 +348,11 @@ max-width: 70%;
 
 #footer-wrapper {
   width: 100vw;
-  height: 10vh;
+  height: 5vh;
   display: flex;
   justify-content: center;
+  margin-top: 20px;
+  z-index: 20000;
 }
 
 #footer-content { 
@@ -371,7 +373,9 @@ max-width: 70%;
   max-width: 50%;
   height: 40px;
 }
-/* 
-@media screen and (max-width: 701) {
-  #fppt
-} */
+
+@media screen and (max-width: 800px) {
+  #footer-wrapper, #footer-content, #footer-mint, #mint-footer-button {
+    display: none;
+  }
+}
