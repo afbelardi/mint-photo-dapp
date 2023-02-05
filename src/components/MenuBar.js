@@ -45,7 +45,12 @@ export default function MenuBar (props) {
             <a href="https://www.twitter.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">
                 Twitter
             </a>
-            <a href="https://www.instagram.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">Instagram</a>
+            <a href="https://www.instagram.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">
+                Instagram
+            </a>
+            <a href="https://goerli.etherscan.io/address/0x1EB40d92B581DC76e91320c08aA890d886eddcdd" target="_blank" rel="noreferrer" className="menu-buttons">
+                Contract on Etherscan
+            </a>
         </section> 
         {isConnected ? 
         <div id='mint-section-wrapper'> 
