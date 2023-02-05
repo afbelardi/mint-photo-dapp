@@ -327,6 +327,17 @@ max-width: 70%;
   }
 } 
 
+@media screen and (max-width: 1300px) {
+  @keyframes floatUpAndDown {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-265%);
+    }
+  } 
+}
+
 @media screen and (max-width: 1200px) {
   @keyframes floatUpAndDown {
     0% {

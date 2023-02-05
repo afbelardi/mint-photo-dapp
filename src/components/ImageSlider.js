@@ -13,7 +13,7 @@ export default function ImageSlider (props) {
             {Object.keys(photoColumn1).length 
             ? photoColumn1.map(link => {
                 return(
-                    <img className="image" src={link.link}></img>
+                    <img key={Math.random() * photoColumn1.length} className="image" src={link.link}></img>
                 )
             })
         : ''}
@@ -22,7 +22,7 @@ export default function ImageSlider (props) {
             {Object.keys(photoColumn2).length 
             ? photoColumn2.map(link => {
                 return(
-                    <img className="image" src={link.link}></img>
+                    <img key={Math.random() * photoColumn2.length} className="image" src={link.link}></img>
                 )
             })
         : ''}
