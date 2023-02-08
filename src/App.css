@@ -177,16 +177,12 @@ max-width: 70%;
 #logo-gif {
   height: 120px;
   width: 50%;
-  max-width: 350px;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 
 
-@media screen and (min-width: 801px) {
-  #logo-gif {
-    width: 300px;
-  }
-}
 
 
 /* CSS */
