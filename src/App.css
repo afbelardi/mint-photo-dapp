@@ -2,7 +2,7 @@
 @import "animation_media_query.css";
 
 .App {
-  background: linear-gradient(247deg, #5468ff, #5adaff);
+  background: linear-gradient(247deg, #5468ff, #39c3ea);
   background-size: 300% 300%;
 
   -webkit-animation: background 15s ease infinite;
