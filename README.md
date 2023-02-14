@@ -4,6 +4,7 @@ This project, built with Create React App, showcases photos that I took that are
 
 The smart contract is deployed on the Goerli testnet. It is linked through Etherscan on the site. Users can connect their Goerli wallet, mint photos that are part of the collection and view the transaction on Etherscan. The collection of NFTs with the metadata can then be viewed on Opensea.
 
+# Contract on Etherscan
 ![Etherscan Contract](./src/images/etherscan.png)
 
 Try running some of the following tasks:

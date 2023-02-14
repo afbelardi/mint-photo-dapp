@@ -39,7 +39,7 @@ export default function MenuBar (props) {
         : 
         <button className="menu-buttons" onClick={connectAccount}>Connect Wallet</button>}
             
-            <a href="https://opensea.io/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">
+            <a href="https://testnets.opensea.io/collection/afbelardiphotonft" target="_blank" rel="noreferrer" className="menu-buttons">
                 OpenSea
             </a>
             <a href="https://www.twitter.com/afbelardi" target="_blank" rel="noreferrer" className="menu-buttons">
