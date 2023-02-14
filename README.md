@@ -1,6 +1,6 @@
-# Sample Hardhat Project
+# Sample React/Solidity/Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project, built with Create React App, showcases photos that I took that are part of an NFT collection. The repository includes a smart contract written in Solidity that has functions for minting, setting the baseURI, withdrawing the balance from the contract and more. 
 
 Try running some of the following tasks:
 
